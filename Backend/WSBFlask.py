@@ -11,6 +11,12 @@ def home():
 def login():
     return #render_template("login.html")
 
+@app.route("/trade", methods = ["POST", "GET"])
+def trade():
+    stock_name = request.form("stock")
+    go, acc = WSBMLAI.call_stock(stock_name)
+    return go, acc
+
 
 if __name__ == '__main__':
     app.run()

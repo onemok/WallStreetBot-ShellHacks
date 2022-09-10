@@ -125,4 +125,4 @@ def call_stock(stock_name):
 
   print(aaplpredictions['Predictions'][-1], round(precision_score(aaplpredictions["Target"], aaplpredictions["Predictions"]),4))
 
-call_stock("AMZN")
+#call_stock("AMZN")
