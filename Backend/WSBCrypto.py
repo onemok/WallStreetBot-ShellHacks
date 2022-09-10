@@ -8,4 +8,4 @@ from sklearn.ensemble import RandomForestRegressor
 import statsmodels
 
 def read_chart(name):
-    return
+    crypto = yf.Ticker("")
