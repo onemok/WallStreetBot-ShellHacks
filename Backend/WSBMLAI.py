@@ -124,4 +124,4 @@ def call_stock(stock_name):
 
   print(spredictions['Predictions'][-1], round(precision_score(spredictions["Target"], spredictions["Predictions"]),4))
 
-call_stock("SPY")
+#call_stock("SPY")
