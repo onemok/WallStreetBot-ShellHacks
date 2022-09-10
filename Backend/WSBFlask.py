@@ -7,6 +7,12 @@ app = Flask(__name__, template_folder="../Frontend/templates")
 def home():
     return render_template("index.html")
 
+@app.route("/LogIn", methods = ["POST", "GET"])
+def login():
+    return #render_template("login.html")
+
 
 if __name__ == '__main__':
     app.run()
+
+    #We the Prophet of Profit
