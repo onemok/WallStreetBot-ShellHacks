@@ -8,6 +8,18 @@ height: 16px;
 vertical-align: text-bottom;
 }
 
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    flex:1
+}
+.main {
+    flex:1
+}  
+
 /*
 * Sidebar
 */
