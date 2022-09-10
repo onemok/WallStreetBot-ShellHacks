@@ -46,8 +46,12 @@
     </div>
 
     <div class="logsig">
-      <button class="section2_btn btn55" type="button">Log In</button> 
-      <button class="section2_btn btn5" type="button">Sign Up</button>
+      <form action="{{url_for('login')}}" method>
+        <button class="section2_btn btn55" type="submit">Log In</button> 
+      </form>
+      <form action="{{url_for('signup')}}">
+        <button class="section2_btn btn5" type="submit">Sign Up</button>
+      </form>
     </div>
   </nav>
 </div>
