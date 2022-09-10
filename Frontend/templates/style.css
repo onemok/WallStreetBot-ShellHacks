@@ -14,14 +14,23 @@ body {
     max-width: 960px;
   }
   
-#nancy{
+#nancy, #ryan, #satoshi {
   width: 400px; 
   height: 225px;
   margin-top: 1.25rem;
-  position: relative;
+  /* position: relative; */
   border-radius: 15px 15px 0px 0px;
-
 }
+
+#ryan, #satoshi {
+  width: 400px; 
+  height: 250px;
+  margin-top: 1.25rem;
+  /* position: relative; */
+  border-radius: 15px 15px 0px 0px;
+}
+
+
   
   .site-header {
     background-color: rgba(0, 0, 0, .85);
