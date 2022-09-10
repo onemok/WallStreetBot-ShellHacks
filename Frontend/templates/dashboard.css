@@ -9,15 +9,16 @@ vertical-align: text-bottom;
 }
 
 .row{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-gap: 3rem;
+    /* flex-direction: row; */
 }
 
 .sidebar {
-    flex:1
+    grid-column:1
 }
 .main {
-    flex:1
+    grid-column:2
 }  
 
 /*
