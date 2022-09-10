@@ -10,6 +10,7 @@ from sklearn.metrics import precision_score
 #print stock chart
 def alltimegraph(stockdf, name):
     stockdf.plot.line(y = "Close", use_index = True, title = f"Historical Price of {name}")
+    ml.savefig("../Frontend/images/alltime.png")
 
 #create our target to predict with our model. Target is a higher/lower close
 def rolldates(stockdf):
