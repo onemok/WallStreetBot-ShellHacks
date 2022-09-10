@@ -109,20 +109,19 @@ def trends(data):
     
     return data
 
-full_predictors = predictors + ["sma20/close","sma50/close","sma200/close","200/20","200/50","50/20","weekly_trend", "month", "open_close_ratio", "high_close_ratio", "low_close_ratio", "dayrange/volume"]
-
 def call_stock(stock_name):
-  aapl = yf.Ticker(stock_name)
-  aapl = aapl.history(period = "5y")
-  alltimegraph(aapl, stock_name)
-  aapldata = rolldates(aapl)
-  aaplcopy = shiftrows(aapl)
-  aapldata = joinpreds(aaplcopy, aapldata)
+  s = yf.Ticker(stock_name)
+  s = s.history(period = "5y")
+  alltimegraph(s, stock_name)
+  sdata = rolldates(s)
+  scopy = shiftrows(s)
+  sdata = joinpreds(scopy, sdata)
   model = makemodel()
-  aapldata = trends(aapldata)
-  aapldata = catcols(aapldata)
-  aaplpredictions = backtest(aapldata.iloc[365:], model, full_predictors)
+  sdata = trends(sdata)
+  sdata = catcols(sdata)
+  full_predictors = predictors + ["sma20/close","sma50/close","sma200/close","200/20","200/50","50/20","weekly_trend", "month", "open_close_ratio", "high_close_ratio", "low_close_ratio", "dayrange/volume"]
+  spredictions = backtest(sdata.iloc[365:], model, full_predictors)
 
-  print(aaplpredictions['Predictions'][-1], round(precision_score(aaplpredictions["Target"], aaplpredictions["Predictions"]),4))
+  print(spredictions['Predictions'][-1], round(precision_score(spredictions["Target"], spredictions["Predictions"]),4))
 
-#call_stock("AMZN")
+call_stock("SPY")

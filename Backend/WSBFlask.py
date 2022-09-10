@@ -5,7 +5,7 @@ app = Flask(__name__, template_folder="../Frontend/templates")
 
 @app.route("/")
 def home():
-    return render_template("index.html")
+    return render_template("index2.html")
 
 @app.route("/login", methods = ["POST", "GET"])
 def login():
