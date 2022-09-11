@@ -39,14 +39,14 @@ def aboutus():
 def dashboard_display():
     stock_name = request.form.get("stock")
     direction = WSBMLAI.call_stock(str(stock_name))
+    chart_address = f"5y{stock_name}.png"
     output = ""
-    disclaimer = "DISCLAIMER!!! THIS IS NOT FINANCIAL ADVICE! WE ARE NOT LIABLE FOR YOUR LOSSES! USE YOUR OWN JUDGEMENT!"
     if direction == float(0):
         output += f"Our ML Model believes, with 65% accuracy, {stock_name} will close lower tomorrow than it did today"
     else:
         output += f"Out ML Model believes, with 65% accuracy, {stock_name} will close higher tomorrow than it did today"
 
-    return render_template("dashboarddisplay.html", answer = output, warning = disclaimer)
+    return render_template("dashboarddisplay.html", answer = output, graph = chart_address)
 
 #@app.route("/", methods = ["POST", "GET"])
 #def trade():
