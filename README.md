@@ -25,7 +25,7 @@
 # 🤖 What's next for WallStreetBot
 <p>The bot is getting smarter everyday as are its creators that brought it to life. We are continuing to improve the model as well as bringing new features. We are going to develop paper trading funcionality and create more advanced models for longer term predictions. We also want to give user option between short and long term options.</p>
 
-# How to run:
-#### Only local functionality is available at the moment. Need to install the modules for flask, pandas, matplotlib, plotly, scikit-learn, yfinance in order to run all functions.
-#### Run the command python3 app.py, python app.py or flask run in the terminal to start the app. copy the local url into browser and use.
-#### crtl C in command line to kill app
+# 🏃 How to run:
+<p>Only local functionality is available at the moment. Need to install the modules for flask, pandas, matplotlib, plotly, scikit-learn, yfinance in order to run all functions.</p>
+<p>Run the command python3 app.py, python app.py or flask run in the terminal to start the app. copy the local url into browser and use.</p>
+<p>crtl C in command line to kill app</p>
