@@ -1,2 +1,2 @@
 echo .DS_Store >> .gitignore
-echo __pycache__ >> .gitignore
+**/__pycache__
