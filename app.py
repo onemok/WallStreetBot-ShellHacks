@@ -35,10 +35,10 @@ def papertrading():
 def aboutus():
     return render_template("aboutus.html")
 
-@app.route("/dashboard", methods = ['POST', 'GET'])
+@app.route("/dashboarddisplay", methods = ['POST', 'GET'])
 def dashboard_display():
-    stock_name = request.form("stock")
-    direction = WSBMLAI.call_stock(stock_name)
+    stock_name = request.form.get("stock")
+    direction = WSBMLAI.call_stock(str(stock_name))
     output = ""
     disclaimer = "DISCLAIMER!!! THIS IS NOT FINANCIAL ADVICE! WE ARE NOT LIABLE FOR YOUR LOSSES! USE YOUR OWN JUDGEMENT!"
     if direction == float(0):
@@ -46,7 +46,7 @@ def dashboard_display():
     else:
         output += f"Out ML Model believes {stock_name} will close higher tomorrow than it did today"
 
-    return render_template("dashboard.html", answer = output, warning = disclaimer)
+    return render_template("dashboarddisplay.html", answer = output, warning = disclaimer)
 
 #@app.route("/", methods = ["POST", "GET"])
 #def trade():
