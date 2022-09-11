@@ -1,5 +1,5 @@
 from flask import Flask, request, url_for, render_template
-# import WSBMLAI
+import WSBMLAI
 
 app = Flask(__name__, template_folder="templates")
 
@@ -35,7 +35,6 @@ def papertrading():
 def aboutus():
     return render_template("aboutus.html")
 
-<<<<<<< HEAD
 @app.route("/signup/dashboard", methods = ['POST', 'GET'])
 def dashboard_display():
     stock_name = request.form("stock")
@@ -48,13 +47,6 @@ def dashboard_display():
         output += f"Out ML Model believes {stock_name} will close higher tomorrow than it did today"
 
     return render_template("dashboard.html", answer = output, warning = disclaimer)
-=======
-# @app.route("/signup/dashboard", methods = ['POST', 'GET'])
-# def dashboard_display():
-#     stock_name = request.form("stock")
-#     direction = WSBMLAI.call_stock(stock_name)
-#     return direction
->>>>>>> f56ada6 (commented out mydisplay stuff)
 
 #@app.route("/", methods = ["POST", "GET"])
 #def trade():
