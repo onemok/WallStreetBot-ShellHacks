@@ -1,18 +1,16 @@
-# WallStreetBot-ShellHacks
 <h1 align="center"> WallStreetBot @ ShellHacks </h1>
 <br>
 
 # 💭 What is WallStreetBot?
-# We are the prophets or profits. personal hedge fund in your pocket.
-
+<p> We are Prophets of Profits. Our ML Model is for the average retail trader to use to aid in their stock trading journey.</p>
 
 # 🔧 Tools
 <center>
-  
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 </center>
 
 # 📝 Plans
