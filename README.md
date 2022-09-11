@@ -1,5 +1,9 @@
 <h1 align="center">👾 WallStreetBot @ ShellHacks 🐚</h1>
 <br>
+<p align="center">
+  <img src="./static/images/stockbot.png" width="200" align="center">                             
+</p>
+<br>
 
 # 💭 What is WallStreetBot?
 <p> We are Prophets of Profits. Our ML Model is for the average retail trader to use to aid in their stock trading journey.</p>
