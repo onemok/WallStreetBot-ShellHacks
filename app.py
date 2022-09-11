@@ -15,7 +15,7 @@ def login():
 def signup():
     return render_template("signup.html")
 
-@app.route("/signup/dashboard", methods = ['POST', 'GET'])
+@app.route("/dashboard", methods = ['POST', 'GET'])
 def dashboard():
     return render_template("dashboard.html")
 
@@ -35,7 +35,7 @@ def papertrading():
 def aboutus():
     return render_template("aboutus.html")
 
-@app.route("/signup/dashboard", methods = ['POST', 'GET'])
+@app.route("/dashboard", methods = ['POST', 'GET'])
 def dashboard_display():
     stock_name = request.form("stock")
     direction = WSBMLAI.call_stock(stock_name)
