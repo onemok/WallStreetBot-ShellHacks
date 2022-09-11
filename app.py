@@ -1,3 +1,4 @@
+from crypt import methods
 from flask import Flask, request, url_for, render_template
 import WSBMLAI
 
@@ -18,6 +19,22 @@ def signup():
 @app.route("/signup/dashboard", methods = ['POST', 'GET'])
 def dashboard():
     return render_template("dashboard.html")
+
+@app.route("/trade", methods = ['POST', 'GET'])
+def trade():
+    return render_template("trade.html")
+
+@app.route("/crypto", methods = ['POST', 'GET'])
+def crypto():
+    return render_template("crypto.html")
+
+@app.route("/papertrading", methods = ['POST', 'GET'])
+def papertrading():
+    return render_template("papertrading.html")
+
+@app.route("/aboutus", methods = ['POST', 'GET'])
+def aboutus():
+    return render_template("aboutus.html")
 
 @app.route("/signup/dashboard", methods = ['POST', 'GET'])
 def dashboard_display():
